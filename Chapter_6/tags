@@ -1,0 +1,52 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUFSIZE	getch.c	5;"	d	file:
+HASHSIZE	hash_map.c	6;"	d	file:
+MAXWORD	binary_tree.c	6;"	d	file:
+MAXWORD	count_c_keywords.c	5;"	d	file:
+MAXWORD	count_c_keywords_pointer_version.c	5;"	d	file:
+MAXWORD	hash_map.c	7;"	d	file:
+NKEYS	count_c_keywords.c	6;"	d	file:
+NKEYS	count_c_keywords_pointer_version.c	6;"	d	file:
+addtree	binary_tree.c	/^struct tnode *addtree(struct tnode *p, char *w)$/;"	f
+binsearch	count_c_keywords.c	/^int binsearch(char* word, struct key tab[], int n)$/;"	f
+binsearch	count_c_keywords_pointer_version.c	/^struct key *binsearch(char* word, struct key tab[], int n)$/;"	f
+buf	getch.c	/^static char buf[BUFSIZE];$/;"	v	file:
+bufp	getch.c	/^static int bufp = 0;$/;"	v	file:
+count	binary_tree.c	/^	int count;$/;"	m	struct:tnode	file:
+count	count_c_keywords.c	/^	int count;$/;"	m	struct:key	file:
+count	count_c_keywords_pointer_version.c	/^	int count;$/;"	m	struct:key	file:
+defn	hash_map.c	/^	char *defn;			\/* replacement text *\/$/;"	m	struct:nlist	file:
+getch	getch.c	/^int getch()$/;"	f
+getword	getword.c	/^int getword(char *word, int lim)$/;"	f
+hash	hash_map.c	/^unsigned hash(char *s)$/;"	f
+hashtab	hash_map.c	/^static struct nlist *hashtab[HASHSIZE];	\/* pointer table *\/$/;"	v	typeref:struct:nlist	file:
+install	hash_map.c	/^struct nlist *install(char *name, char *defn)$/;"	f
+key	count_c_keywords.c	/^struct key {$/;"	s	file:
+key	count_c_keywords_pointer_version.c	/^struct key {$/;"	s	file:
+keytab	count_c_keywords.c	/^} keytab[] = {$/;"	v	typeref:struct:key
+keytab	count_c_keywords_pointer_version.c	/^} keytab[] = {$/;"	v	typeref:struct:key
+left	binary_tree.c	/^	struct tnode *left;$/;"	m	struct:tnode	typeref:struct:tnode::tnode	file:
+lookup	hash_map.c	/^struct nlist *lookup(char *s)$/;"	f
+main	binary_tree.c	/^int main(int argc, char** argv)$/;"	f
+main	count_c_keywords.c	/^int main(void)$/;"	f
+main	count_c_keywords_pointer_version.c	/^int main(void)$/;"	f
+main	hash_map.c	/^int main(void)$/;"	f
+mystrdup	binary_tree.c	/^char *mystrdup(char *s)	\/* make duplicate of s *\/$/;"	f
+mystrdup	hash_map.c	/^char *mystrdup(char *s)	\/* make duplicate of s *\/$/;"	f
+name	hash_map.c	/^	char *name;			\/* defined name *\/$/;"	m	struct:nlist	file:
+next	hash_map.c	/^	struct nlist *next;		\/* next entry in the chain *\/$/;"	m	struct:nlist	typeref:struct:nlist::nlist	file:
+nlist	hash_map.c	/^struct nlist {				\/* table entry	*\/$/;"	s	file:
+right	binary_tree.c	/^	struct tnode *right;$/;"	m	struct:tnode	typeref:struct:tnode::tnode	file:
+talloc	binary_tree.c	/^struct tnode *talloc(void)$/;"	f
+tnode	binary_tree.c	/^struct tnode {$/;"	s	file:
+treeprint	binary_tree.c	/^void treeprint(struct tnode *p)$/;"	f
+undef	hash_map.c	/^int undef(char *name)$/;"	f
+ungetch	getch.c	/^void ungetch(int c)$/;"	f
+word	binary_tree.c	/^	char *word;$/;"	m	struct:tnode	file:
+word	count_c_keywords.c	/^	char *word;$/;"	m	struct:key	file:
+word	count_c_keywords_pointer_version.c	/^	char *word;$/;"	m	struct:key	file:
